@@ -1,14 +1,19 @@
-//
-//  main.c
-//  pta
-//
-//  Created by E A on 2021/11/14.
-//
+#include<stdio.h>
 
-#include <stdio.h>
+int main()
+{
+    long num;
+    long sum=0L;
+    int status;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    printf("Please enter an integer to be summed");
+    printf(" (q to quit):");
+    while (scanf("%ld",&num)==1)
+    {
+        sum = sum + num;
+        printf("Please enter next integer (q to quit):");
+    }
+    printf("Those integers sum to %ld.\n",sum);
+
     return 0;
 }
